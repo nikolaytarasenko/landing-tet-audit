@@ -11,6 +11,16 @@
     line-height: 1.875rem;
   }
 
+  &__header {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    left: -54px;
+    top: -8px;
+  }
+
   &__list-item {
     position: relative;
     padding-left: 10px;
@@ -24,7 +34,7 @@
       height: 5px;
       border-radius: 50%;
       border: 2px solid $color-orange;
-      top: 50%;
+      top: 53%;
       left: -10px;
       transform: translateY(-50%);
     }
