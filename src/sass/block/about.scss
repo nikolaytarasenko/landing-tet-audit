@@ -1,0 +1,41 @@
+.about {
+  background: url("../img/about-bg.png") top right no-repeat;
+  background-size: contain;
+
+  &__inner {
+    position: relative;
+    padding-left: 100px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1453px;
+      height: 1px;
+      left: 0;
+      background-color: #E8E8E8;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__row {
+    padding: 40px 100px;
+    border-left: 1px solid #e8e8e8;
+
+    &_bg-grey {
+      padding: 10px 100px;
+      background-color: #F6F8F9;
+    }
+
+    .text {
+      margin: 35px 0;
+    }
+  }
+}

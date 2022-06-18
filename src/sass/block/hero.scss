@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  min-height: 877px;
   background: url("../img/hero-bg.png") top left no-repeat;
   background-size: contain;
   
@@ -46,11 +46,6 @@
 
   &__feedback {
     grid-column: span 2;
-    //position: absolute;
-    //width: 100%;
-    //left: 50%;
-    //bottom: 0;
-    //transform: translateX(-50%);
   }
 
   &__feedback-main {

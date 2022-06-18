@@ -11,6 +11,7 @@ body {
   height: 100%;
   font-family: $font-family;
   font-weight: 400;
+  color: $color-black;
   overflow-x: hidden;
 }
 
@@ -19,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -56,8 +58,19 @@ ul {
 
 .title {
   font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 2.875rem;
+  font-weight: 600;
+  line-height: 3.375rem;
+}
+
+.subtitle {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $color-blue;
+}
+
+.text {
+  font-weight: 600;
+  line-height: 2rem;
 }
 
 .button {
