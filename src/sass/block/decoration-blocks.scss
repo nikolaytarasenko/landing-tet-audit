@@ -1,0 +1,52 @@
+.block-grey {
+  background-color: #F6F8F9;
+  border: 1px solid #E8E8E8;
+  padding: 43px 67px;
+
+  &__title {
+    color: $color-orange;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 10px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      border: 2px solid $color-orange;
+      top: 50%;
+      left: -10px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.block-yellow {
+  background-color: $color-orange;
+  color: #ffffff;
+  padding: 60px;
+
+  &__title {
+    font-weight: 900;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    margin: 0 0 24px;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 0;
+  }
+}

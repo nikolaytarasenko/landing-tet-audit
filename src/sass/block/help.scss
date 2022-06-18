@@ -1,0 +1,43 @@
+.help {
+  padding: 100px 0;
+
+  &__row {
+    z-index: 2;
+
+    &_first {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-column-gap: 30px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+
+  &__conclusion {
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+
+  &__block-yellow {
+    position: relative;
+    max-width: 550px;
+    margin-left: auto;
+    margin-top: 200px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1354px;
+      height: 560px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url('../img/help-img.jpg') center no-repeat;
+      z-index: -1;
+    }
+  }
+}
