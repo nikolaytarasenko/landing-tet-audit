@@ -1,3 +1,10 @@
-const sum = require('./module/sum.js');
-console.log(sum(2, 10));
-console.log(sum(12, 5));
+import $ from 'jquery';
+import 'slick-carousel';
+
+$('.carousel').slick({
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: '.team .arrow_left',
+  nextArrow: '.team .arrow_right',
+});
