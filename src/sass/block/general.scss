@@ -30,6 +30,16 @@ body {
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 a {
   display: inline-block;
   color: $color-black;
@@ -60,7 +70,7 @@ ul {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3.375rem;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -92,4 +102,8 @@ ul {
 .hide {
   opacity: 0;
   visibility: hidden;
+}
+
+.text-orange {
+  color: $color-orange;
 }

@@ -1,0 +1,48 @@
+.suit {
+  padding: 75px 0 50px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 160px;
+    padding-left: 40px;
+    border-left: 2px solid $color-blue;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &_first {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+
+  &__item-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.875rem;
+  }
+
+  &__item-text {
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
