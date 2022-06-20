@@ -1,0 +1,42 @@
+.trust {
+  padding: 50px 0;
+  background: url("../img/trust-bg.png") right center no-repeat;
+  background-size: contain;
+
+  &__inner {
+    position: relative;
+    padding: 100px 0;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1453px;
+      height: 1px;
+      left: 0;
+      background-color: #E8E8E8;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .slick-slide {
+    margin: 0 24px;
+  }
+
+  .slick-list {
+    margin: 0 -24px;
+  }
+}
