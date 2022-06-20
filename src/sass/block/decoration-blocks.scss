@@ -59,4 +59,10 @@
     line-height: 2rem;
     margin: 0;
   }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
 }
