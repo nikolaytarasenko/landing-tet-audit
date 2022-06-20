@@ -1,0 +1,55 @@
+.blog {
+  padding: 50px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__post {
+    position: relative;
+
+    &:hover {
+      .blog__post-img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  &__post-img {
+    transform: scale(1);
+    transition: 0.2s transform ease-out;
+  }
+
+  &__post-date {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 6px 17px;
+    font-weight: 400;
+    font-size: .875rem;
+    color: #fff;
+    line-height: 1.125rem;
+    background-color: $color-blue;
+  }
+
+  &__post-name {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+
+  .slick-slide {
+    margin: 0 24px;
+  }
+
+  .slick-list {
+    margin: 0 -24px;
+  }
+}
