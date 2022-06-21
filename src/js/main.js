@@ -34,7 +34,11 @@ const initSliders = () => {
 }
 
 const preventDefaultContactForms = () => {
-  // TODO
+  const forms = document.querySelectorAll('form');
+
+  forms.forEach(form => {
+    form.addEventListener('submit', e => e.preventDefault());
+  })
 }
 
 window.addEventListener('DOMContentLoaded', initSliders);
