@@ -1,0 +1,133 @@
+.contacts {
+  padding: 50px 0;
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 120px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__phones {
+    margin-bottom: 24px;
+  }
+
+  &__phone-label {
+    min-width: 106px;
+    margin-right: 5px;
+    font-size: 0.875rem;
+  }
+
+  &__phone-value {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.925rem;
+  }
+
+  &__addresses {
+    margin-bottom: 33px;
+  }
+
+  &__phone-item,
+  &__address-item {
+    display: flex;
+    align-items: center;
+    line-height: 1.925rem;
+  }
+
+  &__address-label {
+    min-width: 106px;
+    font-size: 0.875rem;
+    margin-right: 5px;
+  }
+
+  &__address-value {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.925rem;
+  }
+
+  &__social {
+    margin-bottom: 30px;
+  }
+
+  &__map {
+    margin-bottom: 30px;
+  }
+
+  &__map-img {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  &__subscribe {
+    position: relative;
+    margin-top: 25px;
+  }
+
+  &__subscribe-field {
+    width: 100%;
+    background: #F6F8F9;
+    border: 1px solid #E8E8E8;
+    padding: 22px 20px;
+  }
+
+  &__subscribe-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url("../img/plane-icon.svg") center no-repeat;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__feedback-form {
+    max-width: 460px;
+    width: 100%;
+    padding: 60px;
+    background-color: $color-orange;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__feedback-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    white-space: nowrap;
+  }
+
+  &__feedback-control {
+    margin-bottom: 10px;
+  }
+
+  &__feedback-input,
+  &__feedback-textarea {
+    width: 100%;
+    padding: 22px 20px;
+    background-color: #ffffff;
+    border: 0;
+  }
+
+  &__feedback-agree {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}

@@ -33,4 +33,9 @@ const initSliders = () => {
   });
 }
 
+const preventDefaultContactForms = () => {
+  // TODO
+}
+
 window.addEventListener('DOMContentLoaded', initSliders);
+window.addEventListener('DOMContentLoaded', preventDefaultContactForms);

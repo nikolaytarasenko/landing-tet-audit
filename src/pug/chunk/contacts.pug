@@ -1,0 +1,46 @@
+section.contacts
+  .container
+    .contacts__inner
+      .contacts__column
+        h2.title.contacts__title Контакты
+        h4.subtitle.contacts__subtitle Хотите обсудить сотрудничество или остались вопросы – позвоните или напишите нам
+        .contacts__phones
+          .contacts__phone-item
+            .contacts__phone-label Телефон:
+            .contacts__phone-value +38 044 259 91 15
+          .contacts__phone-item
+            .contacts__phone-label Мобильный:
+            .contacts__phone-value +38 067 111 11 11
+        .contacts__addresses
+          .contacts__address-item
+            .contacts__address-label Адрес:
+            .contacts__address-value Голосеевский проспект, 89, Киев, 03127, Украина
+          .contacts__address-item
+            .contacts__address-label E-mail:
+            .contacts__address-value info@tet-audit.com.ua
+        .contacts__social.social-links
+          a.social-link(href="#")
+            img.social-link__img(src="./img/viber-icon.svg" alt="viber logo")
+          a.social-link(href="#")
+            img.social-link__img(src="./img/telegram-icon.svg" alt="viber logo")
+          a.social-link(href="#")
+            img.social-link__img(src="./img/instagram-icon.svg" alt="instagram logo")
+          a.social-link(href="#")
+            img.social-link__img(src="./img/facebook-icon.svg" alt="facebook logo")
+        .contacts__map
+          img.contacts__map-img(src="./img/contacts-map.jpg" alt="map")
+        p.contacts__text Подпишитесь на нашу рассылку и получайте новости и извещения о событиях и отраслевые отчеты на свою почту
+        form.contacts__subscribe
+          input.contacts__subscribe-field(type="email" placeholder="E-mail")
+          input.contacts__subscribe-button(type="submit" value="")
+      .contacts__column
+        form.contacts__feedback-form
+          h2.title.contacts__feedback-title Отправить сообщение
+          .contacts__feedback-control
+            input.contacts__feedback-input(type="text" placeholder="Ваше имя")
+          .contacts__feedback-control
+            input.contacts__feedback-input(type="email" placeholder="E-mail")
+          .contacts__feedback-control
+            textarea.input.contacts__feedback-textarea(placeholder="Сообщение")
+          p.contacts__feedback-agree Нажимая “Отправить” вы автоматически соглашаетесь с политикой конфиденциальности
+          button.button(type="submit") Отправить
