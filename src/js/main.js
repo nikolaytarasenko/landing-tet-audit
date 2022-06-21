@@ -69,10 +69,25 @@ const checkMobileMenu = () => {
   }
 }
 
+const scrollToSection = () => {
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const ref = this.getAttribute('href').slice(1);
+      const targetSection = document.getElementById(ref);
+
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    })
+  });
+}
+
 const domContentLoadedHandler = () => {
   preventDefaultContactForms();
   initSliders();
   toggleMobileMenu();
+  scrollToSection();
 
   window.addEventListener('resize', checkMobileMenu);
 }
