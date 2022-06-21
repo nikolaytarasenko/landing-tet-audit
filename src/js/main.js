@@ -38,8 +38,43 @@ const preventDefaultContactForms = () => {
 
   forms.forEach(form => {
     form.addEventListener('submit', e => e.preventDefault());
+  });
+}
+
+const toggleMobileMenu = () => {
+  const hamburgerButton = document.querySelector('.hamburger');
+
+  hamburgerButton.addEventListener('click', e => {
+    const pageWrapper = document.querySelector('.wrapper');
+    const header = e.currentTarget.closest('.header');
+
+    pageWrapper.classList.contains('overflow-hidden') ?
+        pageWrapper.classList.remove('overflow-hidden') :
+        pageWrapper.classList.add('overflow-hidden');
+
+    header.classList.toggle('mobile-open');
+    e.currentTarget.classList.toggle('open');
   })
 }
 
-window.addEventListener('DOMContentLoaded', initSliders);
-window.addEventListener('DOMContentLoaded', preventDefaultContactForms);
+const checkMobileMenu = () => {
+  if (document.documentElement.clientWidth > 768) {
+    const header = document.querySelector('.header');
+    const hamburger = document.querySelector('.hamburger');
+    const pageWrapper = document.querySelector('.wrapper');
+
+    header.classList.remove('mobile-open');
+    hamburger.classList.remove('open');
+    pageWrapper.classList.remove('overflow-hidden');
+  }
+}
+
+const domContentLoadedHandler = () => {
+  preventDefaultContactForms();
+  initSliders();
+  toggleMobileMenu();
+
+  window.addEventListener('resize', checkMobileMenu);
+}
+
+window.addEventListener('DOMContentLoaded', domContentLoadedHandler);

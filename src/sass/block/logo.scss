@@ -1,6 +1,10 @@
 .logo {
   transition: 0.15s ease-out;
 
+  @media (max-width: 768px) {
+    max-width: 120px;
+  }
+
   &:hover {
     opacity: 0.7;
   }
