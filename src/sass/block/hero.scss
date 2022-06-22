@@ -2,6 +2,10 @@
   min-height: 877px;
   background: url("../img/hero-bg.png") top left no-repeat;
   background-size: contain;
+
+  @media (max-width: 992px) {
+    min-height: auto;
+  }
   
   &__inner {
     position: relative;
@@ -11,11 +15,43 @@
     grid-template-rows: 1fr 160px;
     align-items: center;
     padding-top: 150px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
   }
 
   &__main {
     max-width: 450px;
     margin-left: auto;
+
+    @media (max-width: 992px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__img-wrapper {
+    @media (max-width: 992px) {
+      text-align: center;
+      padding: 50px 0 0;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  &__img {
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
+
+    @media (max-width: 415px) {
+      max-width: 230px;
+    }
   }
 
   &__title {
@@ -23,6 +59,22 @@
     font-weight: 600;
     line-height: 4.375rem;
     margin-bottom: 70px;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__list-item {
@@ -46,10 +98,25 @@
 
   &__feedback {
     grid-column: span 2;
+
+    @media (max-width: 1140px) {
+      padding: 32px 30px;
+    }
+
+    @media (max-width: 992px) {
+      grid-column: span 1;
+      flex-direction: column;
+    }
   }
 
   &__feedback-main {
     flex-basis: 40%;
+  }
+
+  &__feedback-form {
+    @media (max-width: 415px) {
+      flex-direction: column;
+    }
   }
 
   &__feedback-text {
@@ -57,6 +124,15 @@
     font-weight: 800;
     line-height: 2rem;
     margin: 0;
+
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 415px) {
+      text-align: center;
+      font-weight: 600;
+    }
   }
 
   .container {

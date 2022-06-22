@@ -23,11 +23,24 @@
     &::after {
       bottom: 0;
     }
+
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
   }
 
   &__row {
     padding: 40px 100px;
     border-left: 1px solid #e8e8e8;
+
+    @media (max-width: 768px) {
+      padding: 20px 40px;
+      text-align: center;
+
+      .title {
+        margin-bottom: 20px;
+      }
+    }
 
     &_bg-grey {
       padding: 10px 100px;
@@ -36,6 +49,10 @@
 
     .text {
       margin: 35px 0;
+
+      @media (max-width: 768px) {
+        margin: 15px 0;
+      }
     }
   }
 }

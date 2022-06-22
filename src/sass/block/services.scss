@@ -1,19 +1,37 @@
 .services {
   padding: 100px 0 50px;
 
+  @media (max-width: 768px) {
+    padding: 25px 0 50px;
+  }
+
   &__title {
     margin-bottom: 45px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 25px;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__list-item {
     padding-left: 100px;
     padding-right: 100px;
+
+    @media (max-width: 768px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .block-grey__title {

@@ -1,11 +1,29 @@
 .steps {
   padding: 50px 0;
 
+  &__title {
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     margin-bottom: 65px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    @media (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
   }
 
   &__number {
@@ -36,12 +54,21 @@
 
   &__block-yellow {
     padding: 60px 100px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__block-yellow-title {
     font-size: 1.75rem;
     font-weight: 600;
     line-height: 2.5rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
   }
 
   &__block-yellow-text {

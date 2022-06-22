@@ -1,10 +1,19 @@
 .contacts {
   padding: 50px 0;
 
+  @media (max-width: 768px) {
+    padding: 25px 0;
+  }
+
   &__inner {
     display: flex;
     align-items: flex-end;
     column-gap: 120px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__subtitle {
@@ -103,6 +112,10 @@
     background-color: $color-orange;
     color: #ffffff;
     text-align: center;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 
   &__feedback-title {
@@ -110,6 +123,11 @@
     font-weight: 600;
     line-height: 2.5rem;
     white-space: nowrap;
+
+    @media (max-width: 415px) {
+      white-space: pre-wrap;
+      font-size: 1.25rem;
+    }
   }
 
   &__feedback-control {

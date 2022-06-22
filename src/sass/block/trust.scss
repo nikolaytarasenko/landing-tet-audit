@@ -3,9 +3,17 @@
   background: url("../img/trust-bg.png") right center no-repeat;
   background-size: contain;
 
+  @media (max-width: 768px) {
+    padding: 25px 0;
+  }
+
   &__inner {
     position: relative;
     padding: 100px 0;
+
+    @media (max-width: 768px) {
+      padding: 50px 0;
+    }
 
     &::before,
     &::after {
@@ -30,6 +38,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
   }
 
   .slick-slide {

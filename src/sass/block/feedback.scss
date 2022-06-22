@@ -19,6 +19,13 @@
     padding: 0 20px;
     color: $color-black;
 
+    @media (max-width: 415px) {
+      max-width: 100%;
+      margin-bottom: 10px;
+      margin-right: 0;
+      min-height: 47px;
+    }
+
     &::placeholder {
       color: silver;
     }

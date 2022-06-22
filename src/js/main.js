@@ -7,19 +7,43 @@ const initSliders = () => {
       sliderNode: '.team__carousel',
       slidesToShow: 4,
       prevArrowNode: '.team .arrow_left',
-      nextArrowNode: '.team .arrow_right'
+      nextArrowNode: '.team .arrow_right',
+      responsive: [
+        {
+          breakpoint: 993,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
     },
     {
       sliderNode: '.blog__carousel',
       slidesToShow: 3,
       prevArrowNode: '.blog .arrow_left',
-      nextArrowNode: '.blog .arrow_right'
+      nextArrowNode: '.blog .arrow_right',
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     },
     {
       sliderNode: '.trust__carousel',
       slidesToShow: 6,
       prevArrowNode: '.trust .arrow_left',
-      nextArrowNode: '.trust .arrow_right'
+      nextArrowNode: '.trust .arrow_right',
+      responsive: [
+        {
+          breakpoint: 993,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
     }
   ];
 
@@ -29,6 +53,7 @@ const initSliders = () => {
       slidesToShow: element.slidesToShow,
       prevArrow: element.prevArrowNode,
       nextArrow: element.nextArrowNode,
+      responsive: element.responsive
     })
   });
 }

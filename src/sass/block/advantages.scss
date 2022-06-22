@@ -3,19 +3,35 @@
   background: url("../img/advantages-bg.png") left top no-repeat;
   background-size: contain;
 
+  @media (max-width: 768px) {
+    padding: 25px 0;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
     display: flex;
+
+    @media (max-width: 415px) {
+      flex-direction: column;
+    }
   }
 
   &__item-content {
     margin-left: 20px;
+
+    @media (max-width: 415px) {
+      margin-left: 0;
+    }
   }
 
   &__item-title {
@@ -44,11 +60,19 @@
     padding: 0 100px;
     border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__grow-inner {
     padding: 60px 100px;
     background: #F6F8F9;
+
+    @media (max-width: 768px) {
+      padding: 30px 60px;
+    }
   }
 
   &__grow-title {
@@ -57,5 +81,11 @@
     line-height: 2.75rem;
     font-weight: 600;
     margin-left: 100px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
   }
 }

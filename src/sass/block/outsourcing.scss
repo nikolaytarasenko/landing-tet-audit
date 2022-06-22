@@ -2,6 +2,10 @@
   position: relative;
   padding: 50px 0 0;
 
+  @media (max-width: 768px) {
+    padding: 25px 0 0;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -20,6 +24,11 @@
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-column-gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding-bottom: 40px;
+    }
 
     &::after {
       content: '';

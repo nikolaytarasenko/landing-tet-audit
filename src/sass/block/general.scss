@@ -75,6 +75,12 @@ ul {
   font-weight: 600;
   line-height: 3.375rem;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
 }
 
 .subtitle {
@@ -82,6 +88,10 @@ ul {
   text-transform: uppercase;
   color: $color-blue;
   line-height: 1.875rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .text {

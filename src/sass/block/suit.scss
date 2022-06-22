@@ -3,6 +3,10 @@
 
   &__inner {
     display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -17,6 +21,11 @@
     min-height: 160px;
     padding-left: 40px;
     border-left: 2px solid $color-blue;
+
+    @media (max-width: 768px) {
+      min-height: auto;
+      margin-bottom: 50px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 50px;
@@ -45,5 +54,9 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
   }
 }

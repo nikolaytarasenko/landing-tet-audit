@@ -20,6 +20,11 @@
     position: absolute;
     left: -54px;
     top: -8px;
+
+    @media (max-width: 768px) {
+      position: relative;
+      left: 0;
+    }
   }
 
   &__list-item {
@@ -47,11 +52,20 @@
   color: #ffffff;
   padding: 60px;
 
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+
   &__title {
     font-weight: 900;
     font-size: 3.75rem;
     line-height: 3.75rem;
     margin: 0 0 24px;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+    }
   }
 
   &__text {
@@ -65,5 +79,10 @@
     display: flex;
     align-items: center;
     column-gap: 50px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
   }
 }
